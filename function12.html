@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+function show_coords(event)
+{
+x=event.clientX;
+y=event.clientY;
+document.koor.xkoor.value=x;
+document.koor.ykoor.value=y;
+}
+
+</script>
+</head>
+<body onMouseMove="show_coords(event)">
+<p>mouse kordintları</p>
+<form name="koor" Method="POST">
+X: <input type="text" name="xkoor"> <br>
+Y: <input type="text" name="ykoor"> <br>
+</body>
+</html>

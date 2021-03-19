@@ -1,0 +1,89 @@
+<html>
+<head>
+<script>
+
+function topla()
+{
+var a=Number(prompt("1.sayıyı giriniz :"))
+var b=Number(prompt("2.sayıyı giriniz :"))
+
+
+for(i=0; i<20; i++ )
+{
+document.getElementById('sonucto').value = a+b;
+}
+}
+
+
+function carp()
+{
+var a=Number(prompt("1.sayıyı giriniz :"))
+var b=Number(prompt("2.sayıyı giriniz :"))
+
+
+
+for(i=0; i<20; i++ )
+{
+document.getElementById('sonucca').value = a*b;
+}
+}
+
+function cıkar()
+{
+var a=Number(prompt("1.sayıyı giriniz :"))
+var b=Number(prompt("2.sayıyı giriniz :"))
+
+
+
+for(i=0; i<20; i++ )
+{
+document.getElementById('sonuccı').value = a-b;
+}
+}
+
+function bolum()
+{
+var a=Number(prompt("1.sayıyı giriniz :"))
+var b=Number(prompt("2.sayıyı giriniz :"))
+
+for(i=0; i<20; i++ )
+{
+document.getElementById('sonucbö').value = a/b;
+}
+}
+function kalan()
+{
+var a=Number(prompt("1.sayıyı giriniz :"))
+var b=Number(prompt("2.sayıyı giriniz :"))
+
+
+
+for(i=0; i<20; i++ )
+{
+document.getElementById('sonucka').value = a%b;
+}
+}
+</script>
+</head>
+<body>
+
+<table border="1">
+<tr>
+<form>
+<td><input type="button" value="toplama" onclick="topla()"/></td>
+<td><input type="button" value="carpma" onclick="carp()"/></td>
+<td><input type="button" value="cıkarma" onclick="cıkar()"/></td>
+<td><input type="button" value="bölme" onclick="bolum()"/></td>
+<td><input type="button" value="kalan" onclick="kalan()"/></td>
+</form>
+<tr>
+<td><input type="text" id="sonucto" /></td>
+<td><input type="text" id="sonucca" /></td>
+<td><input type="text" id="sonuccı" /></td>
+<td><input type="text" id="sonucbö" /></td>
+<td><input type="text" id="sonucka" /></td>
+</tr>
+</tr>
+</table>
+</body>
+</html>

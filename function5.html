@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function ucgen()
+{
+var a=Number(prompt("1.kenar uzunluğunu giriniz :"))
+var b=Number(prompt("2.kenar uzunluğunu giriniz :"))
+var c=Number(prompt("3.kenar uzunluğunu giriniz :"))
+
+if((a==b && a!=c) || (a==c && a!=b) || (b==c && b!=a))
+{
+document.write("ikizkenar üçgen");
+}		
+if(a==b && b==c && c==a)
+{
+document.write("eşkenar üçgen");
+}
+if(a!=b && b!=c && c!=a)
+{
+document.write("çeşitkenar üçgen");
+}
+}
+ucgen();
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<center><tıtle>MAKINA</tıtle></center>
+<br>
+<br>
+<br>
+<script>
+function topla(form)
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a+b
+form.ans.value = c
+}
+
+function cıkar(form)
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a-b
+form.ans.value = c
+}
+
+function carp(form)
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a*b
+form.ans.value = c
+}
+
+function böl(form)
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a/b
+form.ans.value = c
+}
+
+function pow(form)
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=Math.pow(a,b)
+form.ans.value = c
+}
+</script>
+</head>
+
+<body>
+<center>
+<form name="formx">
+<input type="text" size=4 value=8 name="a">
+<input type="button" value="  +  "  onClick="topla(formx)">
+<input type="button" value="  -  "  onClick="cıkar(formx)">
+<input type="button" value="  *  "  onClick="carp(formx)">
+<input type="button" value="  /  "  onClick="böl(formx)">
+<input type="button" value="  ^  "  onClick="pow(formx)">
+<input type="number" size=4 value=2 name="b"> =
+<input type="number" value=0 name="ans" size=9>
+</form>
+</center>
+</body>
+</html>

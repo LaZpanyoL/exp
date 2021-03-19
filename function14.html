@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+function dogrumu()
+{
+return confirm("bilgilerin doğru olduğu emin misiniz ?")
+}
+function sor()
+{
+return confirm("silmek istediğinize emin misiniz ?")
+}
+</script>
+</head>
+<body>
+<form name="form1" onsubmit="return dogrumu()" onReset="return sor()" method="post">
+<p><h3>İsim</h3></p>
+<input type="text" size="30" name="isim">
+<p><h3>Adres</h3></p>
+<input type="text" size="30" name="adres">
+<p><h3>Telefon</h3></p>
+<input type="text" size="30" name="telefon">
+<p><input type="submit" value="Gonder">
+<input type="Reset" value="Sil"></p>
+</form>
+</body>
+</html>
